@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1em;
+	font-family: sans-serif;
+	line-height: 1.6;
+	background-color: #E9E9DB;
+	color: #692003;
+}
+
+.chatbox {
+	width: 75%;
+	margin: auto;
+	margin-top: 2em;
+	box-shadow: 10px 20px 30px 10px rgba(72, 93, 116, 0.7);
+}
+
+.chat {
+	width: 100%;
+	height: 20em;
+	/*margin: auto;*/
+	background-color: #fff;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.input {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 1em;
+	/*margin-top: 1em;*/
+	padding: 0.5em;
+	background-color: #494949; 
+}
+
+.input input, .input button {
+	padding: 0.5em;
+	border: none;
+}
+
+.input button {
+	background-color: #02EFFA;
+}
+
+.input button:hover {
+	background-color: #02E867;
+}
+
+.chat ul {
+	text-decoration: none;
+	padding: 0;
+}
+
+ul div {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.chat li {
+	/*width: 5em;
+	display: inline-block;
+	float: left;
+	display: inline;*/
+	display: grid;
+	grid-template-columns: 1fr 11fr;
+	margin-bottom: 0.2em
+}
+
+.user {
+	padding: 0.5em;
+	background-color: #FFE5BB;
+}
+
+.message {
+ 	margin: 0;
+ 	padding: .5em;
+ 	background-color: #FFEBEB;
+}
+
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  	.input input, .input button {
+		padding: 1em;
+		border: none;
+	}
+
+	.input {
+		grid-template-columns: 4fr 1fr;
+	}
+}

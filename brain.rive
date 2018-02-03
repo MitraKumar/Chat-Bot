@@ -1,0 +1,15 @@
+! version = 2.0
+
+! sub what's = what is
+
++ hello*
+- Hello human.
+
++ my name is *
+- <set name=<formal>>Hii <get name>.
+
++ what is my name [*]
+- I know, it's <get name>
+
++ *
+- I don't understand.
